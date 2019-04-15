@@ -60,6 +60,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\_MK\MKGlow\Editor\EditorHelper.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Editor\EditorHelper.EditorStyles.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Editor\EditorHelper.EditorUIContent.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Editor\Legacy\MKGlowEditor.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Editor\Legacy\SelectiveStandardShaderGUI.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Editor\MinMaxRangeDrawer.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Editor\MKGlowEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\BaseClasses\OnAnimatorUpdateActionEditorBase.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\GetAnimatorAnimatorRootActionEditor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Animator\Editor\GetAnimatorBodyActionEditor.cs" />
@@ -164,19 +171,19 @@
     <None Include="Assets\PlayMaker\Editor\Install\readme.txt" />
     <None Include="Assets\PlayMaker\Editor\UnityEngine.UI.xml" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/GitHUB/FallGuy/FallGuy/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/Unity/FallGuy/FallGuy/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>E:/GitHUB/FallGuy/FallGuy/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>E:/Unity/FallGuy/FallGuy/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>E:/GitHUB/FallGuy/FallGuy/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>E:/Unity/FallGuy/FallGuy/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/GitHUB/FallGuy/FallGuy/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/Unity/FallGuy/FallGuy/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>E:/GitHUB/FallGuy/FallGuy/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>E:/Unity/FallGuy/FallGuy/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -427,35 +434,35 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.Advertisements">
-      <HintPath>E:/GitHUB/FallGuy/FallGuy/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.Editor">
-      <HintPath>E:/GitHUB/FallGuy/FallGuy/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>E:/GitHUB/FallGuy/FallGuy/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>E:/GitHUB/FallGuy/FallGuy/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Purchasing">
-      <HintPath>E:/GitHUB/FallGuy/FallGuy/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
-    </Reference>
-    <Reference Include="PlayMakerEditorResources">
-      <HintPath>E:/GitHUB/FallGuy/FallGuy/Assets/PlayMaker/Editor/PlayMakerEditorResources.dll</HintPath>
-    </Reference>
-    <Reference Include="PlayMaker">
-      <HintPath>E:/GitHUB/FallGuy/FallGuy/Assets/Plugins/PlayMaker/PlayMaker.dll</HintPath>
-    </Reference>
-    <Reference Include="PlayMakerEditor">
-      <HintPath>E:/GitHUB/FallGuy/FallGuy/Assets/PlayMaker/Editor/PlayMakerEditor.dll</HintPath>
+    <Reference Include="ConditionalExpression">
+      <HintPath>E:/Unity/FallGuy/FallGuy/Assets/PlayMaker/ConditionalExpression.dll</HintPath>
     </Reference>
     <Reference Include="ConditionalExpressionEditor">
-      <HintPath>E:/GitHUB/FallGuy/FallGuy/Assets/PlayMaker/Editor/ConditionalExpressionEditor.dll</HintPath>
+      <HintPath>E:/Unity/FallGuy/FallGuy/Assets/PlayMaker/Editor/ConditionalExpressionEditor.dll</HintPath>
     </Reference>
-    <Reference Include="ConditionalExpression">
-      <HintPath>E:/GitHUB/FallGuy/FallGuy/Assets/PlayMaker/ConditionalExpression.dll</HintPath>
+    <Reference Include="PlayMakerEditor">
+      <HintPath>E:/Unity/FallGuy/FallGuy/Assets/PlayMaker/Editor/PlayMakerEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayMakerEditorResources">
+      <HintPath>E:/Unity/FallGuy/FallGuy/Assets/PlayMaker/Editor/PlayMakerEditorResources.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayMaker">
+      <HintPath>E:/Unity/FallGuy/FallGuy/Assets/Plugins/PlayMaker/PlayMaker.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>E:/Unity/FallGuy/FallGuy/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>E:/Unity/FallGuy/FallGuy/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>E:/Unity/FallGuy/FallGuy/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>E:/Unity/FallGuy/FallGuy/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>E:/Unity/FallGuy/FallGuy/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.10f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

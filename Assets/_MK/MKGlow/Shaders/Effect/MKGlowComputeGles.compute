@@ -1,0 +1,61 @@
+﻿//////////////////////////////////////////////////////
+// MK Glow Compute Gles3							//
+//					                                //
+// Created by Michael Kremmel                       //
+// www.michaelkremmel.de | www.michaelkremmel.store //
+// Copyright © 2019 All rights reserved.            //
+//////////////////////////////////////////////////////
+//TODO: Reduce needed variants when using gles
+#pragma only_renderers gles3
+
+//Copy - 0
+#pragma kernel Copy COPY _COMPUTE_SHADER
+
+//PreSample - 1
+#pragma kernel PreSample PRESAMPLE _COMPUTE_SHADER _TARGET_LQ
+#pragma kernel PreSample PRESAMPLE _COMPUTE_SHADER _TARGET_LQ _NORMALMAP
+#pragma kernel PreSample PRESAMPLE _COMPUTE_SHADER _TARGET_LQ _ALPHABLEND_ON
+#pragma kernel PreSample PRESAMPLE _COMPUTE_SHADER _TARGET_LQ _NORMALMAP _ALPHABLEND_ON
+#pragma kernel PreSample PRESAMPLE _COMPUTE_SHADER _TARGET_LQ
+#pragma kernel PreSample PRESAMPLE _COMPUTE_SHADER _TARGET_LQ _NORMALMAP _ALPHABLEND_ON
+#pragma kernel PreSample PRESAMPLE _COMPUTE_SHADER _TARGET_LQ _ALPHABLEND_ON
+#pragma kernel PreSample PRESAMPLE _COMPUTE_SHADER _TARGET_LQ _NORMALMAP
+
+//Downsample - 9
+#pragma kernel Downsample DOWNSAMPLE _COMPUTE_SHADER _TARGET_LQ
+#pragma kernel Downsample DOWNSAMPLE _COMPUTE_SHADER _TARGET_LQ _NORMALMAP
+#pragma kernel Downsample DOWNSAMPLE _COMPUTE_SHADER _TARGET_LQ _ALPHABLEND_ON
+#pragma kernel Downsample DOWNSAMPLE _COMPUTE_SHADER _TARGET_LQ _NORMALMAP _ALPHABLEND_ON
+#pragma kernel Downsample DOWNSAMPLE _COMPUTE_SHADER _TARGET_LQ
+#pragma kernel Downsample DOWNSAMPLE _COMPUTE_SHADER _TARGET_LQ _NORMALMAP _ALPHABLEND_ON
+#pragma kernel Downsample DOWNSAMPLE _COMPUTE_SHADER _TARGET_LQ _ALPHABLEND_ON
+#pragma kernel Downsample DOWNSAMPLE _COMPUTE_SHADER _TARGET_LQ _NORMALMAP
+
+//Upsample - 17
+#pragma kernel Upsample UPSAMPLE _COMPUTE_SHADER _TARGET_LQ
+#pragma kernel Upsample UPSAMPLE _COMPUTE_SHADER _TARGET_LQ _NORMALMAP
+#pragma kernel Upsample UPSAMPLE _COMPUTE_SHADER _TARGET_LQ _ALPHABLEND_ON
+#pragma kernel Upsample UPSAMPLE _COMPUTE_SHADER _TARGET_LQ _NORMALMAP _ALPHABLEND_ON
+#pragma kernel Upsample UPSAMPLE _COMPUTE_SHADER _TARGET_LQ
+#pragma kernel Upsample UPSAMPLE _COMPUTE_SHADER _TARGET_LQ _NORMALMAP _ALPHABLEND_ON
+#pragma kernel Upsample UPSAMPLE _COMPUTE_SHADER _TARGET_LQ _ALPHABLEND_ON
+#pragma kernel Upsample UPSAMPLE _COMPUTE_SHADER _TARGET_LQ _NORMALMAP
+
+#ifdef COPY
+	#include "../Inc/Copy.hlsl"
+#endif
+#ifdef PRESAMPLE
+	#include "../Inc/Presample.hlsl"
+#endif
+#ifdef DOWNSAMPLE
+	#include "../Inc/Downsample.hlsl"
+#endif
+#ifdef UPSAMPLE
+	#include "../Inc/Upsample.hlsl"
+#endif
+#ifdef COMPOSITE
+	#include "../Inc/Composite.hlsl"
+#endif
+#ifdef DEBUG
+	#include "../Inc/Debug.hlsl"
+#endif

@@ -1,0 +1,60 @@
+﻿//////////////////////////////////////////////////////
+// MK Glow Compute									//
+//					                                //
+// Created by Michael Kremmel                       //
+// www.michaelkremmel.de | www.michaelkremmel.store //
+// Copyright © 2019 All rights reserved.            //
+//////////////////////////////////////////////////////
+#pragma only_renderers ps4 xboxone vulkan d3d11 glcore
+
+//Copy - 0
+#pragma kernel Copy COPY _COMPUTE_SHADER
+
+//PreSample - 1
+#pragma kernel PreSample PRESAMPLE _COMPUTE_SHADER
+#pragma kernel PreSample PRESAMPLE _COMPUTE_SHADER _NORMALMAP
+#pragma kernel PreSample PRESAMPLE _COMPUTE_SHADER _ALPHABLEND_ON
+#pragma kernel PreSample PRESAMPLE _COMPUTE_SHADER _NORMALMAP _ALPHABLEND_ON
+#pragma kernel PreSample PRESAMPLE _COMPUTE_SHADER _ALPHAPREMULTIPLY_ON
+#pragma kernel PreSample PRESAMPLE _COMPUTE_SHADER _NORMALMAP _ALPHABLEND_ON _ALPHAPREMULTIPLY_ON
+#pragma kernel PreSample PRESAMPLE _COMPUTE_SHADER _ALPHABLEND_ON _ALPHAPREMULTIPLY_ON
+#pragma kernel PreSample PRESAMPLE _COMPUTE_SHADER _NORMALMAP _ALPHAPREMULTIPLY_ON
+
+//Downsample - 9
+#pragma kernel Downsample DOWNSAMPLE _COMPUTE_SHADER
+#pragma kernel Downsample DOWNSAMPLE _COMPUTE_SHADER _NORMALMAP
+#pragma kernel Downsample DOWNSAMPLE _COMPUTE_SHADER _ALPHABLEND_ON
+#pragma kernel Downsample DOWNSAMPLE _COMPUTE_SHADER _NORMALMAP _ALPHABLEND_ON
+#pragma kernel Downsample DOWNSAMPLE _COMPUTE_SHADER _ALPHAPREMULTIPLY_ON
+#pragma kernel Downsample DOWNSAMPLE _COMPUTE_SHADER _NORMALMAP _ALPHABLEND_ON _ALPHAPREMULTIPLY_ON
+#pragma kernel Downsample DOWNSAMPLE _COMPUTE_SHADER _ALPHABLEND_ON _ALPHAPREMULTIPLY_ON
+#pragma kernel Downsample DOWNSAMPLE _COMPUTE_SHADER _NORMALMAP _ALPHAPREMULTIPLY_ON
+
+//Upsample - 17
+#pragma kernel Upsample UPSAMPLE _COMPUTE_SHADER
+#pragma kernel Upsample UPSAMPLE _COMPUTE_SHADER _NORMALMAP
+#pragma kernel Upsample UPSAMPLE _COMPUTE_SHADER _ALPHABLEND_ON
+#pragma kernel Upsample UPSAMPLE _COMPUTE_SHADER _NORMALMAP _ALPHABLEND_ON
+#pragma kernel Upsample UPSAMPLE _COMPUTE_SHADER _ALPHAPREMULTIPLY_ON
+#pragma kernel Upsample UPSAMPLE _COMPUTE_SHADER _NORMALMAP _ALPHABLEND_ON _ALPHAPREMULTIPLY_ON
+#pragma kernel Upsample UPSAMPLE _COMPUTE_SHADER _ALPHABLEND_ON _ALPHAPREMULTIPLY_ON
+#pragma kernel Upsample UPSAMPLE _COMPUTE_SHADER _NORMALMAP _ALPHAPREMULTIPLY_ON
+
+#ifdef COPY
+	#include "../Inc/Copy.hlsl"
+#endif
+#ifdef PRESAMPLE
+	#include "../Inc/Presample.hlsl"
+#endif
+#ifdef DOWNSAMPLE
+	#include "../Inc/Downsample.hlsl"
+#endif
+#ifdef UPSAMPLE
+	#include "../Inc/Upsample.hlsl"
+#endif
+#ifdef COMPOSITE
+	#include "../Inc/Composite.hlsl"
+#endif
+#ifdef DEBUG
+	#include "../Inc/Debug.hlsl"
+#endif

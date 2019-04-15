@@ -60,6 +60,43 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\_MK\MKGlow\Examples\Scripts\Asteroid.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Examples\Scripts\AsteroidSpawner.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Examples\Scripts\ChangeSettingsLegacy.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Examples\Scripts\Cube.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Examples\Scripts\DestroyOpenMenuText.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Examples\Scripts\HandleMenu.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Examples\Scripts\MoveCamera.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Examples\Scripts\RotateObject.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Examples\Scripts\SpectateObjects.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Scripts\Common.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Scripts\Compatibility.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Scripts\ComputeShaderVariants.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Scripts\Effect.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Scripts\IDimension.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Scripts\Legacy\MKGlow.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Scripts\MinMaxRange.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Scripts\MipBuffer.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Scripts\MKGlow.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Scripts\PipelineExtensions.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Scripts\PipelineProperties.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Scripts\RenderContext.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Scripts\RenderTarget.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Scripts\RenderTargetContext.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Scripts\Resources.cs" />
+    <Compile Include="Assets\_MK\MKGlow\Scripts\Settings.cs" />
+    <Compile Include="Assets\Archanor\Sci-Fi Arsenal\InteractiveDemo\Demo Scripts\SciFiBeamScript.cs" />
+    <Compile Include="Assets\Archanor\Sci-Fi Arsenal\InteractiveDemo\Demo Scripts\SciFiButtonScript.cs" />
+    <Compile Include="Assets\Archanor\Sci-Fi Arsenal\InteractiveDemo\Demo Scripts\SciFiDragMouseOrbit.cs" />
+    <Compile Include="Assets\Archanor\Sci-Fi Arsenal\InteractiveDemo\Demo Scripts\SciFiFireProjectile.cs" />
+    <Compile Include="Assets\Archanor\Sci-Fi Arsenal\InteractiveDemo\Demo Scripts\SciFiLoadSceneOnClick.cs" />
+    <Compile Include="Assets\Archanor\Sci-Fi Arsenal\InteractiveDemo\Demo Scripts\SciFiLoopScript.cs" />
+    <Compile Include="Assets\Archanor\Sci-Fi Arsenal\InteractiveDemo\Demo Scripts\SciFiProjectileScript.cs" />
+    <Compile Include="Assets\Archanor\Sci-Fi Arsenal\Sci-Fi Effects\Scripts\SciFiBeamStatic.cs" />
+    <Compile Include="Assets\Archanor\Sci-Fi Arsenal\Sci-Fi Effects\Scripts\SciFiLightFade.cs" />
+    <Compile Include="Assets\Archanor\Sci-Fi Arsenal\Sci-Fi Effects\Scripts\SciFiLightFlicker.cs" />
+    <Compile Include="Assets\Archanor\Sci-Fi Arsenal\Sci-Fi Effects\Scripts\SciFiPitchRandomizer.cs" />
+    <Compile Include="Assets\Archanor\Sci-Fi Arsenal\Sci-Fi Effects\Scripts\SciFiRotation.cs" />
     <Compile Include="Assets\PlayMaker\Actions\ActionHelpers.cs" />
     <Compile Include="Assets\PlayMaker\Actions\AnimateVariables\AnimateColor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\AnimateVariables\AnimateFloat.cs" />
@@ -918,31 +955,101 @@
     <Compile Include="Assets\PlayMaker\Actions\Web\WWWObject.cs" />
     <Compile Include="Assets\PlayMaker\FsmProcessor.cs" />
     <Compile Include="Assets\PlayMaker\UpdateHelper.cs" />
-    <Compile Include="Assets\Scripts\bulletBall4.cs" />
+    <Compile Include="Assets\Scripts\BlockAudioSource.cs" />
+    <Compile Include="Assets\Scripts\Bomb.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\CameraFollowRotate.cs" />
     <Compile Include="Assets\Scripts\ClickSound.cs" />
-    <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\CollisionAudio.cs" />
+    <Compile Include="Assets\Scripts\ExplosiveForce.cs" />
+    <Compile Include="Assets\Scripts\FloorZone.cs" />
+    <Compile Include="Assets\Scripts\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\OutofBoundsZone.cs" />
     <Compile Include="Assets\Scripts\RotateCube.cs" />
     <Compile Include="Assets\Scripts\RotateCubeCC.cs" />
     <Compile Include="Assets\Scripts\Weapon03b.cs" />
+    <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\LookCamera.cs" />
+    <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\SkyboxChanger.cs" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Sprites\Sprites-Diffuse.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Legacy\MKGlowStandard.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Legacy\Illumin\MK_Illumin-Glossy.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\Inc\Common.hlsl" />
+    <None Include="Assets\_MK\MKGlow\Shaders\Effect\MKGlowSM25.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Legacy\Cutout\MK_Cutout-Glossy.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\Inc\Composite.hlsl" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Legacy\Particle\MK_Particle AddMultiply.shader" />
     <None Include="Assets\PlayMaker\Templates\Readme.txt" />
+    <None Include="Assets\_MK\MKGlow\Legacy_3_0_7\ReadMe.txt" />
     <None Include="Assets\PlayMaker\Readme.txt" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Legacy\Particle\MK_Particle Alpha Blend.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Legacy\Normal\MK_Normal-DiffuseBumped.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Legacy\Normal\MK_Normal-DiffuseBumpSpec.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\Effect\MKGlowSM30.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsLuminance\UI\UI-Unlit-Detail.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\Effect\MKGlowSM40.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Legacy\Other\MK_Illumin-Diffuse.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsLuminance\UI\UI-Unlit-Text.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\Effect\MKGlowSM35.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Legacy\Particle\MK_Particle Add.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Legacy\Transparent\MK_Transparent-Diffuse.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Legacy\Transparent\MK_Transparent-DiffuseBumpSpec.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\Effect\MKGlowComputeGles.compute" />
+    <None Include="Assets\_MK\MKGlow\Shaders\Inc\Downsample.hlsl" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Legacy\Other\MK_Unlit-Normal.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\UI\UI-Default.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsLuminance\Sprites\Sprites-Diffuse.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Legacy\Particle\MK_Particle Multiply.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Legacy\Cutout\MK_Cutout-DiffuseBumpSpec.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\Effect\MKGlowSM20.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Legacy\Illumin\MK_Illumin-DiffuseBumpSpec.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Legacy\Illumin\MK_Illumin-DiffuseBumped.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\Inc\Copy.hlsl" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Legacy\Normal\MK_Normal-Glossy.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\Inc\UI.hlsl" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsLuminance\UI\UI-Unlit-TextDetail.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Legacy\Transparent\MK_Transparent-DiffuseBumped.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsLuminance\UI\UI-Lit-Refraction.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Legacy\Other\MK_Mobile-Diffuse.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsLuminance\UI\UI-DefaultETC1.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\Effect\MKGlowSM40Geometry.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsLuminance\UI\UI-Lit-Detail.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsLuminance\UI\UI-DefaultFont.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\Inc\Debug.hlsl" />
     <None Include="Assets\PlayMaker\Resources\PlayMakerAssemblies.txt" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Legacy\Normal\MK_Normal-Diffuse.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsLuminance\UI\UI-Lit-RefractionDetail.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\Inc\Presample.hlsl" />
+    <None Include="Assets\_MK\MKGlow\Shaders\Inc\Sprite.hlsl" />
+    <None Include="Assets\_MK\MKGlow\Shaders\Inc\Upsample.hlsl" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Legacy\MKGlowStandardSpecular.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Legacy\Illumin\MK_Illumin-Diffuse.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\Inc\CompositeSample.hlsl" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsLuminance\Sprites\Sprites-Default.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Legacy\Transparent\MK_Transparent-Glossy.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\Effect\MKGlowCompute.compute" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsLuminance\UI\UI-Default.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Legacy\Cutout\MK_Cutout-Diffuse.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\Effect\MKGlowSelectiveRender.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsLuminance\UI\UI-Lit-Bumped.shader" />
+    <None Include="Assets\Archanor\Sci-Fi Arsenal\Sci-Fi Arsenal Readme.txt" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Legacy\Cutout\MK_Cutout-DiffuseBumped.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsLuminance\UI\UI-Lit-Transparent.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsLuminance\UI\UI-Unlit-Transparent.shader" />
+    <None Include="Assets\_MK\MKGlow\Shaders\VariantsSelective\Sprites\Sprites-Default.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/GitHUB/FallGuy/FallGuy/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/Unity/FallGuy/FallGuy/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>E:/GitHUB/FallGuy/FallGuy/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>E:/Unity/FallGuy/FallGuy/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>E:/GitHUB/FallGuy/FallGuy/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>E:/Unity/FallGuy/FallGuy/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/GitHUB/FallGuy/FallGuy/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/Unity/FallGuy/FallGuy/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>E:/GitHUB/FallGuy/FallGuy/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>E:/Unity/FallGuy/FallGuy/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -1145,20 +1252,20 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.10f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Analytics.Editor">
-      <HintPath>E:/GitHUB/FallGuy/FallGuy/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>E:/GitHUB/FallGuy/FallGuy/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>E:/GitHUB/FallGuy/FallGuy/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+    <Reference Include="ConditionalExpression">
+      <HintPath>E:/Unity/FallGuy/FallGuy/Assets/PlayMaker/ConditionalExpression.dll</HintPath>
     </Reference>
     <Reference Include="PlayMaker">
-      <HintPath>E:/GitHUB/FallGuy/FallGuy/Assets/Plugins/PlayMaker/PlayMaker.dll</HintPath>
+      <HintPath>E:/Unity/FallGuy/FallGuy/Assets/Plugins/PlayMaker/PlayMaker.dll</HintPath>
     </Reference>
-    <Reference Include="ConditionalExpression">
-      <HintPath>E:/GitHUB/FallGuy/FallGuy/Assets/PlayMaker/ConditionalExpression.dll</HintPath>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>E:/Unity/FallGuy/FallGuy/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>E:/Unity/FallGuy/FallGuy/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>E:/Unity/FallGuy/FallGuy/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.10f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
