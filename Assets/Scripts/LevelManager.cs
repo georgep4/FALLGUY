@@ -23,14 +23,30 @@ public class LevelManager : MonoBehaviour
 
     public GameObject RestartButton;
 
-  
+
+    public Rigidbody rb;
+
+    public float forwardForce = 2000f;
+    public float sideForce = 200f;
+
     public void RestartLevel()
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    
-    
 
+    void Update()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit))
+        {
+            if(hit.transform.name == "PlayerBrain")
+            {
+                rb.AddForce(sideForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+            }
+            
+        }
+    }
 }

@@ -10,9 +10,9 @@ public class CollisionAudio : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag == "Blocks")
+        if (col.gameObject.tag == "Player")
         {
-            source.PlayOneShot(CollisionAudioSource);
+           source.PlayOneShot(CollisionAudioSource,0.2f);
         }
     }
 

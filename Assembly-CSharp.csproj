@@ -961,12 +961,14 @@
     <Compile Include="Assets\Scripts\CameraFollowRotate.cs" />
     <Compile Include="Assets\Scripts\ClickSound.cs" />
     <Compile Include="Assets\Scripts\CollisionAudio.cs" />
+    <Compile Include="Assets\Scripts\ColorChangingBox.cs" />
     <Compile Include="Assets\Scripts\ExplosiveForce.cs" />
     <Compile Include="Assets\Scripts\FloorZone.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Scripts\OutofBoundsZone.cs" />
     <Compile Include="Assets\Scripts\RotateCube.cs" />
     <Compile Include="Assets\Scripts\RotateCubeCC.cs" />
+    <Compile Include="Assets\Scripts\Teleportation.cs" />
     <Compile Include="Assets\Scripts\Weapon03b.cs" />
     <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\LookCamera.cs" />
     <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\SkyboxChanger.cs" />
