@@ -8,6 +8,7 @@ TagManager:
   - Floor
   - Blocks
   - PlayerBrain
+  - TeleFromHere
   layers:
   - Default
   - TransparentFX
