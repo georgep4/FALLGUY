@@ -166,9 +166,11 @@
     <Compile Include="Assets\PlayMaker\Editor\PlayMakerWelcomeWindow.cs" />
     <Compile Include="Assets\PlayMaker\Editor\PreUpdateChecker.cs" />
     <Compile Include="Assets\PlayMaker\Editor\ReportWindow.cs" />
+    <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.102.0.txt" />
     <None Include="Assets\PlayMaker\Editor\Resources\CustomVariableTypes.txt" />
     <None Include="Assets\PlayMaker\Editor\Resources\VersionInfo.txt" />
     <None Include="Assets\PlayMaker\Editor\Install\readme.txt" />
+    <None Include="Assets\GoogleMobileAds\Editor\GoogleMobileAdsDependencies.xml" />
     <None Include="Assets\PlayMaker\Editor\UnityEngine.UI.xml" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/cjackson/Documents/GitHub/FALLGUY/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -448,6 +450,18 @@
     </Reference>
     <Reference Include="PlayMakerEditorResources">
       <HintPath>C:/Users/cjackson/Documents/GitHub/FALLGUY/Assets/PlayMaker/Editor/PlayMakerEditorResources.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.IOSResolver_v1.2.102.0">
+      <HintPath>C:/Users/cjackson/Documents/GitHub/FALLGUY/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.102.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.JarResolver_v1.2.102.0">
+      <HintPath>C:/Users/cjackson/Documents/GitHub/FALLGUY/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.102.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.VersionHandler">
+      <HintPath>C:/Users/cjackson/Documents/GitHub/FALLGUY/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.VersionHandlerImpl_v1.2.102.0">
+      <HintPath>C:/Users/cjackson/Documents/GitHub/FALLGUY/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.102.0.dll</HintPath>
     </Reference>
     <Reference Include="PlayMaker">
       <HintPath>C:/Users/cjackson/Documents/GitHub/FALLGUY/Assets/Plugins/PlayMaker/PlayMaker.dll</HintPath>

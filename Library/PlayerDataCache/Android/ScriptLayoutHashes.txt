@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/cjackson/Documents/GitHub/FallGuy02.apk
+C:/Users/cjackson/Documents/GitHub/FallGuy03 with ads7.apk
 SceneListBegin?
 Assets/Scenes/FallGuy3.unity
 SceneListEnd?
@@ -312,6 +312,7 @@ fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
 f9a3fa795fdc45b44f33cc2a28c5a2ca Assembly-CSharp.dll:.SkyboxChanger
 b73119425cc0ab4ec6eef33ade1132ea Assembly-CSharp.dll:HutongGames.PlayMaker.PlayMakerUiDropEvent
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:GoogleMobileAds.Common.MobileAdsEventExecutor
 6f605c580f7ba02889d73bf605c38c8f PlayMaker.dll:.FsmTemplate
 9b8a30b0d2b39397e408f051bc054940 PlayMaker.dll:.PlayMakerAnimatorIK
 9b8a30b0d2b39397e408f051bc054940 PlayMaker.dll:.PlayMakerAnimatorMove
@@ -382,6 +383,7 @@ e888ef4305b8fac9cd5510fefa0636bf Assembly-CSharp.dll:SciFiArsenal.SciFiFireProje
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.OutofBoundsZone
 d06d3090e7e3be00dd03da4fc75c67a1 Assembly-CSharp.dll:HutongGames.PlayMaker.PlayMakerUiEndEditEvent
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
+6c0565d8927a7c6e5846571214daadd1 Assembly-CSharp.dll:.AdMobManager
 baa3883e657f6639110d95bc7783a67e Assembly-CSharp.dll:MK.Glow.Example.RotateObject
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
@@ -460,3 +462,4 @@ cd67f3e1e9ccac6db86c1564cea5a827 Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 69167579cf7fcbb2676fc1e675963dcd Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
+c6d791020da9b6773ce7535294856134 Assembly-CSharp.dll:.AdMobManager2
