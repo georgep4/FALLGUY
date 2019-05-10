@@ -13,9 +13,10 @@ public class AdMobManager2 : MonoBehaviour
     { 
         MobileAds.Initialize(appId);
         RequestBanner();
+        RequestInterstitial();
     }
 
-    private void RequestBanner()
+    public void RequestBanner()
     {
 #if UNITY_ANDROID
         string adUnitId = "ca-app-pub-3940256099942544/6300978111";
@@ -33,5 +34,36 @@ public class AdMobManager2 : MonoBehaviour
 
         // Load the banner with the request.
         bannerView.LoadAd(request);
+    }
+
+    private InterstitialAd interstitial;
+
+    public void RequestInterstitial()
+    {
+#if UNITY_ANDROID
+        string adUnitId = "ca-app-pub-3940256099942544/1033173712";
+#elif UNITY_IPHONE
+        string adUnitId = "ca-app-pub-3940256099942544/4411468910";
+#else
+        string adUnitId = "unexpected_platform";
+#endif
+
+        // Initialize an InterstitialAd.
+        this.interstitial = new InterstitialAd(adUnitId);
+
+        // Create an empty ad request.
+        AdRequest request = new AdRequest.Builder().Build();
+        // Load the interstitial with the request.
+        this.interstitial.LoadAd(request);
+    }
+
+    public void ShowInterstitial()
+    {
+
+        if (this.interstitial.IsLoaded())
+        {
+            this.interstitial.Show();
+
+        }
     }
 }

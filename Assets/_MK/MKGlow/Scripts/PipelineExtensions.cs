@@ -90,7 +90,7 @@ namespace MK.Glow
             material.SetPass(pass);
             if(useGeometryShader)
             {
-                Graphics.DrawProcedural(MeshTopology.Points, 1);
+                Graphics.DrawProceduralNow(MeshTopology.Points, 1);
             }
             else
             {

@@ -10,15 +10,15 @@ public class Teleportation2 : MonoBehaviour
   //  public Rigidbody rb;
 
     LevelManager letsRestart2;
-   AdMobManager getIntertitial;
-    AdMobManager getBanner;
+   AdMobManager2 getIntertitial;
+    AdMobManager2 getBanner;
 
     void Start()
     {
         Debug.Log("Teleportation2");
 
-       getBanner = FindObjectOfType<AdMobManager>();
-       getBanner.RequestBanner();
+        getBanner = FindObjectOfType<AdMobManager2>();
+        getBanner.RequestBanner();
 
     }
 
@@ -29,8 +29,9 @@ public class Teleportation2 : MonoBehaviour
 
             Debug.Log("Teleportation:  Restart Level");
 
-            getIntertitial = FindObjectOfType<AdMobManager>();
-            getIntertitial.RequestRegularAD();
+            getIntertitial = FindObjectOfType<AdMobManager2>();
+         //   getIntertitial.RequestInterstitial();
+            getIntertitial.ShowInterstitial();
 
             letsRestart2 = FindObjectOfType<LevelManager>();
             letsRestart2.RestartLevel();
