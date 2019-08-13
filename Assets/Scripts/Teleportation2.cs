@@ -10,7 +10,7 @@ public class Teleportation2 : MonoBehaviour
   //  public Rigidbody rb;
 
     LevelManager letsRestart2;
-   AdMobManager2 getIntertitial;
+    AdMobManager2 getIntertitial;
     AdMobManager2 getBanner;
 
     void Start()
@@ -19,7 +19,7 @@ public class Teleportation2 : MonoBehaviour
 
         getBanner = FindObjectOfType<AdMobManager2>();
         getBanner.RequestBanner();
-
+        getIntertitial.RequestInterstitial(); // new
     }
 
     void OnTriggerEnter(Collider other)
@@ -27,10 +27,10 @@ public class Teleportation2 : MonoBehaviour
 
         if (other.gameObject.tag == "TeleFromHere") { 
 
-            Debug.Log("Teleportation:  Restart Level");
+            Debug.Log("Teleportation2:  Restart Level");
 
             getIntertitial = FindObjectOfType<AdMobManager2>();
-         //   getIntertitial.RequestInterstitial();
+           //  getIntertitial.RequestInterstitial();  // ORIG was commented out.
             getIntertitial.ShowInterstitial();
 
             letsRestart2 = FindObjectOfType<LevelManager>();

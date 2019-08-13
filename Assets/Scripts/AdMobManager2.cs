@@ -19,7 +19,7 @@ public class AdMobManager2 : MonoBehaviour
     public void RequestBanner()
     {
 #if UNITY_ANDROID
-        string adUnitId = "ca-app-pub-3940256099942544/6300978111";
+        string adUnitId = "ca-app-pub-3940256099942544/6300978111";  //  Pit Falling = ca-app-pub-2625071124190654/2431593897,  Orig = ca-app-pub-3940256099942544/6300978111
 #elif UNITY_IPHONE
             string adUnitId = "ca-app-pub-3940256099942544/2934735716";
 #else
@@ -41,7 +41,7 @@ public class AdMobManager2 : MonoBehaviour
     public void RequestInterstitial()
     {
 #if UNITY_ANDROID
-        string adUnitId = "ca-app-pub-3940256099942544/1033173712";
+        string adUnitId = "ca-app-pub-3940256099942544/1033173712";  //  Pit Falling = ca-app-pub-2625071124190654/9160653778,  Orig = ca-app-pub-3940256099942544/1033173712
 #elif UNITY_IPHONE
         string adUnitId = "ca-app-pub-3940256099942544/4411468910";
 #else
