@@ -11,6 +11,7 @@ public class Teleportation2 : MonoBehaviour
 
     LevelManager letsRestart2;
     AdMobManager2 getIntertitial;
+    AdMobManager2 requestIntertitial;
     AdMobManager2 getBanner;
 
     void Start()
@@ -19,7 +20,9 @@ public class Teleportation2 : MonoBehaviour
 
         getBanner = FindObjectOfType<AdMobManager2>();
         getBanner.RequestBanner();
-        getIntertitial.RequestInterstitial(); // new
+
+        requestIntertitial = FindObjectOfType<AdMobManager2>();
+        requestIntertitial.RequestInterstitial(); // new
     }
 
     void OnTriggerEnter(Collider other)

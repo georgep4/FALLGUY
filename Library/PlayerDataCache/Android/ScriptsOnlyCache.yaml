@@ -1840,5 +1840,5 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/FallGuy3.unity
-  playerPath: C:/Users/cjackson/Documents/GitHub/FALLGUY/APK_Builds/Pit Falling Testing
-    Ads Dummy v3.apk
+  playerPath: C:/Users/cjackson/Documents/GitHub/FALLGUY/APK_Builds/Pit Falling Real
+    Ads v5.apk
